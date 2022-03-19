@@ -9,7 +9,7 @@ $ cd vagrant-with-docker-kit
 $ git submodule init
 $ git submodule update
 ```
-2. Copy `.env.example` to `.env` and `docker-kit/docker/.env.example` to `.env`, then edit they if necessary:
+2. Copy `.env.example` to `.env` and `docker-kit/docker/.env.example` to `docker-kit/docker/.env`, then edit they if necessary:
 ```bash
 $ cp .env.example .env
 $ cp docker-kit/docker/.env.example docker-kit/docker/.env
