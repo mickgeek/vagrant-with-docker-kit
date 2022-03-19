@@ -25,13 +25,13 @@ once_as_vagrant_script = <<-SH
   echo "--> Run the provisioning script by the user: `whoami`"
 
   echo "--> Set the default folder after start shell sessions"
-  { echo; echo "cd /vagrant/docker"; } | tee -a ~/.bashrc
+  { echo; echo "cd /vagrant/docker-kit"; } | tee -a ~/.bashrc
 SH
 always_as_root_script = <<-SH
   echo "--> Run the provisioning script by the user: `whoami`"
 
   echo "--> Run the project with Docker Compose"
-  cd /vagrant/docker
+  cd /vagrant/docker-kit
   docker system prune -f
   docker-compose up --build
 SH
